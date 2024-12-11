@@ -1,3 +1,7 @@
+![Visited Count](https://komarev.com/ghpvc/?username=thilak-r&repo=Pneumonia-detection&style=flat-square&label=Visited%20Count)
+
+
+
 Note:
 To download trained model, [click here](https://www.kaggle.com/code/thilak02/pneunomia-detection-by-thilak/output)
 
