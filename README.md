@@ -1,5 +1,3 @@
-![Visited Count](https://komarev.com/ghpvc/?username=thilak-r&repo=Pneumonia-detection&style=flat-square&label=Visited%20Count)
-
 
 
 Note:
