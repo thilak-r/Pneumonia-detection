@@ -1,0 +1,31 @@
+name: Update Traffic Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily
+
+jobs:
+  update-traffic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Fetch Traffic Data
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/thilak-r/Pneumonia-detection/traffic/views > traffic.json
+
+      - name: Update README
+        run: |
+          VIEWS=$(jq '.count' traffic.json)
+          UNIQUE_VISITORS=$(jq '.uniques' traffic.json)
+          echo -e "## Repository Visitor Stats\n\n- **Total Views**: $VIEWS\n- **Unique Visitors**: $UNIQUE_VISITORS" > visitor-stats.md
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add visitor-stats.md
+          git commit -m "Update visitor stats"
+          git push
