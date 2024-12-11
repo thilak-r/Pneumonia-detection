@@ -1,3 +1,6 @@
+Note:
+To download trained model, [click here](https://www.kaggle.com/code/thilak02/pneunomia-detection-by-thilak/output)
+
 # Pneumonia Detection 🩺
 
 ## **Project Overview**
