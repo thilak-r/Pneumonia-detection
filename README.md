@@ -9,7 +9,17 @@ To download trained model, [click here](https://www.kaggle.com/code/thilak02/pne
 This project is a deep learning-based system designed to detect pneumonia from chest X-ray images. By leveraging the power of **ResNet18** architecture, the model classifies X-ray images as either **Normal** or **Pneumonia** with high accuracy. The system is built to aid healthcare professionals in making accurate diagnoses quickly and effectively.
 
 ---
+--
+⭐ If you like this project, don't forget to give it a star on GitHub!  
 
+---
+<a href="https://github.com/thilak-r/liver-fabrosis-detection/blob/main/Original-ResNet-18-Architecture.png">
+  <img src="https://raw.githubusercontent.com/thilak-r/liver-fabrosis-detection/main/Original-ResNet-18-Architecture.png" 
+       alt="Original ResNet-18 Architecture" 
+       style="max-width: 100%; height: auto; display: block; margin: auto;">
+</a>
+
+---
 ## **Key Features**
 - **Deep Learning-Powered**: Utilizes **ResNet18**, a state-of-the-art convolutional neural network architecture.
 - **Binary Classification**: Classifies X-ray images into two categories: **Normal** and **Pneumonia**.
